@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — TSUNDOKU CORE</title>
+<style>
+  :root {
+    --bg: #FBFAF8;
+    --card: #FFFFFF;
+    --border: #E5E1DA;
+    --text: #1F1D1A;
+    --muted: #6B6660;
+    --primary: #3A5A78;
+    --accent: #B5651D;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --card: #1E1E1E;
+      --border: #2E2E2E;
+      --text: #EDEAE4;
+      --muted: #9C968E;
+      --primary: #7BA3C4;
+      --accent: #D9884A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 16px;
+    margin-top: 36px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    color: var(--primary);
+  }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  a { color: var(--primary); }
+  .contact {
+    margin-top: 12px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--card);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="updated">最終更新日: 2026年8月23日</p>
+
+  <p>TSUNDOKU CORE（以下「本アプリ」）は、利用者のプライバシーを尊重します。本ポリシーは、本アプリが収集する情報とその利用方法について説明します。</p>
+
+  <h2>1. 収集する情報</h2>
+  <p>本アプリは、以下の情報を Supabase（データベースサービス）を通じて保存します。</p>
+  <ul>
+    <li>メールアドレス（アカウント作成・ログイン用）</li>
+    <li>Google アカウント情報（Google ログインを利用する場合。氏名・メールアドレス・プロフィール画像）</li>
+    <li>利用者が登録した書籍情報（タイトル・著者・ISBN・ページ数・購入価格・読書状態など）</li>
+  </ul>
+
+  <h2>2. 情報の利用目的</h2>
+  <p>収集した情報は、以下の目的にのみ利用します。</p>
+  <ul>
+    <li>アカウント認証・ログイン機能の提供</li>
+    <li>登録した書籍情報の保存・表示</li>
+    <li>積読状態の可視化・関連書籍の表示</li>
+  </ul>
+
+  <h2>3. 第三者への提供</h2>
+  <p>本アプリは、利用者の同意なく個人情報を第三者に提供・販売しません。ただし、以下のサービスを利用してデータを処理します。</p>
+  <ul>
+    <li><strong>Supabase</strong>（データベース・認証基盤）</li>
+    <li><strong>openBD</strong> / <strong>Google Books API</strong>（書籍情報取得。ISBN のみを送信し、個人情報は送信しません）</li>
+  </ul>
+
+  <h2>4. データの保管・削除</h2>
+  <p>利用者は、アプリ内の設定からアカウント削除を申請できます。削除申請後、登録された個人情報およびデータは速やかに削除されます。</p>
+
+  <h2>5. 広告・トラッキング</h2>
+  <p>本アプリは広告を表示せず、行動トラッキングや第三者への利用データ提供を行いません。</p>
+
+  <h2>6. お問い合わせ</h2>
+  <p>本ポリシーに関するお問い合わせは、下記サポート窓口までご連絡ください。</p>
+  <div class="contact">altercore073@gmail.com</div>
+</main>
+</body>
+</html>
