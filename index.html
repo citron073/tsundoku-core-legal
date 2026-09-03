@@ -6,105 +6,176 @@
 <title>プライバシーポリシー — TSUNDOKU CORE</title>
 <style>
   :root {
-    --bg: #FBFAF8;
-    --card: #FFFFFF;
-    --border: #E5E1DA;
-    --text: #1F1D1A;
-    --muted: #6B6660;
-    --primary: #3A5A78;
-    --accent: #B5651D;
+    --bg: #FBFAF8; --card: #FFFFFF; --border: #E5E1DA;
+    --text: #1F1D1A; --muted: #6B6660; --primary: #3A5A78; --accent: #B5651D;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #121212;
-      --card: #1E1E1E;
-      --border: #2E2E2E;
-      --text: #EDEAE4;
-      --muted: #9C968E;
-      --primary: #7BA3C4;
-      --accent: #D9884A;
+      --bg: #121212; --card: #1E1E1E; --border: #2E2E2E;
+      --text: #EDEAE4; --muted: #9C968E; --primary: #7BA3C4; --accent: #D9884A;
     }
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
+    margin: 0; background: var(--bg); color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
     line-height: 1.8;
   }
-  main {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 48px 24px 96px;
-  }
-  h1 {
-    font-size: 22px;
-    margin: 0 0 4px;
-  }
-  .updated {
-    color: var(--muted);
-    font-size: 13px;
-    margin-bottom: 32px;
-  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .updated { color: var(--muted); font-size: 13px; margin-bottom: 32px; }
   h2 {
-    font-size: 16px;
-    margin-top: 36px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
-    color: var(--primary);
+    font-size: 16px; margin-top: 36px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--border); color: var(--primary);
   }
+  h3 { font-size: 14px; margin-top: 24px; margin-bottom: 4px; }
   p, li { font-size: 14px; }
   ul { padding-left: 20px; }
   a { color: var(--primary); }
   .contact {
-    margin-top: 12px;
-    padding: 16px;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    background: var(--card);
+    margin-top: 12px; padding: 16px; border: 1px solid var(--border);
+    border-radius: 12px; background: var(--card);
+  }
+  .note {
+    margin-top: 12px; padding: 16px; border: 1px solid var(--accent);
+    border-radius: 12px; background: var(--card);
   }
 </style>
 </head>
 <body>
 <main>
   <h1>プライバシーポリシー</h1>
-  <p class="updated">最終更新日: 2026年8月23日</p>
+  <p class="updated">最終更新日: 2026年9月3日</p>
 
-  <p>TSUNDOKU CORE（以下「本アプリ」）は、利用者のプライバシーを尊重します。本ポリシーは、本アプリが収集する情報とその利用方法について説明します。</p>
+  <p>
+    TSUNDOKU CORE（以下「本アプリ」）は、利用者のプライバシーを尊重します。
+    本ポリシーは、本アプリが収集する情報とその利用方法について説明します。
+  </p>
 
   <h2>1. 収集する情報</h2>
   <p>本アプリは、以下の情報を Supabase（データベースサービス）を通じて保存します。</p>
+
+  <h3>アカウントに関する情報</h3>
   <ul>
-    <li>メールアドレス（アカウント作成・ログイン用）</li>
+    <li>Apple ID（Sign in with Apple を利用する場合。氏名およびメールアドレス。Apple の「メールを非公開」を選ぶと、Apple が発行する転送用アドレスのみを受け取ります）</li>
     <li>Google アカウント情報（Google ログインを利用する場合。氏名・メールアドレス・プロフィール画像）</li>
-    <li>利用者が登録した書籍情報（タイトル・著者・ISBN・ページ数・購入価格・読書状態など）</li>
+  </ul>
+  <p>
+    本アプリはパスワードを受け取りません。認証は Apple および Google が行い、
+    本アプリはその結果のみを受け取ります。
+  </p>
+
+  <h3>利用者が入力・登録する情報</h3>
+  <ul>
+    <li>登録した書籍の情報（タイトル・著者・ISBN・ページ数・購入価格・購入日・読書状態・メモ・タグ・保存場所など）</li>
+    <li>利用者が撮影した表紙・背表紙の写真</li>
+    <li>読書アクション、プロジェクト、フォローした著者</li>
+    <li>ご意見・ご要望としてお送りいただいた内容</li>
   </ul>
 
+  <h3>端末に関する情報</h3>
+  <ul>
+    <li>プッシュ通知トークン（新刊候補の通知を有効にした場合のみ）</li>
+  </ul>
+  <p>
+    位置情報、連絡先、写真ライブラリ全体へのアクセスは行いません。
+    カメラはバーコードの読み取りと、表紙・背表紙の撮影にのみ使用します。
+  </p>
+
   <h2>2. 情報の利用目的</h2>
-  <p>収集した情報は、以下の目的にのみ利用します。</p>
   <ul>
     <li>アカウント認証・ログイン機能の提供</li>
     <li>登録した書籍情報の保存・表示</li>
-    <li>積読状態の可視化・関連書籍の表示</li>
+    <li>積読状態の可視化、関連書籍・次に読む本の提示</li>
+    <li>フォローした著者の新刊候補の確認と通知</li>
+    <li>不具合の把握と改善（お送りいただいたご意見の確認）</li>
   </ul>
+  <p>本アプリは、生成AIによる利用者データの学習・解析を行いません。</p>
 
-  <h2>3. 第三者への提供</h2>
-  <p>本アプリは、利用者の同意なく個人情報を第三者に提供・販売しません。ただし、以下のサービスを利用してデータを処理します。</p>
+  <h2>3. 他の利用者から見える情報</h2>
+
+  <h3>撮影した表紙・背表紙の写真</h3>
+  <div class="note">
+    <p style="margin:0;">
+      <strong>撮影した写真は、URL を知っている人であれば誰でも閲覧できる状態で保存されます。</strong>
+      画像の保存先を一般公開の領域に置いているためです。
+      URL は推測が困難な識別子で構成されており、本アプリの画面から他の利用者の写真を探すことはできませんが、
+      「本人にしか見えない」保証はありません。
+      書影以外のもの（周囲の様子や書き込みなど）が写り込まないようご注意ください。
+    </p>
+  </div>
+  <p>
+    写真の書き込み・削除は本人のみが行えます。本の登録を削除するか、アカウントを削除すると写真も削除されます。
+  </p>
+
+  <h3>書誌情報の共有</h3>
+  <p>
+    ISBN・タイトル・著者・出版社・ページ数・定価といった<strong>書誌情報は、全利用者で共有するデータとして保存されます。</strong>
+    利用者が「書誌情報を補足する」機能で空欄を埋めた場合、その内容は同じ本を登録した他の利用者にも表示されます。
+    これは同じ本の情報を何度も取得し直さないための仕組みです。
+  </p>
+  <p>
+    一方、<strong>購入価格・購入日・読書状態・メモ・タグ・保存場所は本人だけのもの</strong>で、他の利用者に共有されることはありません。
+  </p>
+
+  <h3>友達機能</h3>
+  <p>
+    メールアドレスを完全一致で指定して友達を申請でき、<strong>双方が承諾した相手とだけ</strong>、
+    実績や読了数などを見せ合えます。承諾していない相手や不特定多数に公開されることはありません。
+    ランキングや順位の表示は行いません。
+  </p>
+
+  <h2>4. 第三者への提供</h2>
+  <p>
+    本アプリは、利用者の同意なく個人情報を第三者に提供・販売しません。
+    ただし、以下のサービスを利用してデータを処理します。
+  </p>
   <ul>
-    <li><strong>Supabase</strong>（データベース・認証基盤）</li>
-    <li><strong>openBD</strong> / <strong>Google Books API</strong>（書籍情報取得。ISBN のみを送信し、個人情報は送信しません）</li>
+    <li><a href="https://supabase.com/privacy">Supabase</a>（データベース・認証基盤・画像の保存）</li>
+    <li><a href="https://www.apple.com/legal/privacy/">Apple</a>（Sign in with Apple、プッシュ通知の配信）</li>
+    <li><a href="https://policies.google.com/privacy">Google</a>（Google ログイン）</li>
+    <li><a href="https://openbd.jp/">openBD</a> / <a href="https://developers.google.com/books">Google Books API</a>（書籍情報の取得。<strong>ISBN および著者名のみを送信し、利用者を特定できる情報は送信しません</strong>）</li>
+    <li><a href="https://expo.dev/privacy">Expo</a>（プッシュ通知の中継）</li>
   </ul>
 
-  <h2>4. データの保管・削除</h2>
-  <p>利用者は、アプリ内の設定からアカウント削除を申請できます。削除申請後、登録された個人情報およびデータは速やかに削除されます。</p>
+  <h2>5. データの保管・削除</h2>
+  <p>
+    利用者は、アプリ内の「設定」→「アカウントを削除」から、いつでもご自身で削除できます。
+    アカウント、登録した書籍の記録、撮影した写真、フィードバックの内容が削除されます。この操作は取り消せません。
+  </p>
+  <p>
+    ただし、<strong>3章に記載した共有の書誌情報（ISBN・タイトル・著者・ページ数など）は削除されません。</strong>
+    これらは特定の個人と結び付かない書籍そのものの情報であり、他の利用者が利用しているためです。
+  </p>
 
-  <h2>5. 広告・トラッキング</h2>
-  <p>本アプリは広告を表示せず、行動トラッキングや第三者への利用データ提供を行いません。</p>
+  <h2>6. 広告・トラッキング</h2>
+  <p>
+    本アプリは広告を表示せず、行動トラッキングや第三者への利用データ提供を行いません。
+    広告識別子（IDFA）は取得しません。
+  </p>
 
-  <h2>6. お問い合わせ</h2>
-  <p>本ポリシーに関するお問い合わせは、下記サポート窓口までご連絡ください。</p>
-  <div class="contact">altercore073@gmail.com</div>
+  <h2>7. 未成年の方の利用</h2>
+  <p>
+    本アプリは特定の年齢層に向けたものではありませんが、
+    未成年の方がご利用の場合は、保護者の方の同意のうえでお使いください。
+  </p>
+
+  <h2>8. 本ポリシーの変更</h2>
+  <p>
+    本ポリシーを変更する場合は、本ページの最終更新日を改めて掲載します。
+    重要な変更がある場合は、アプリ内でお知らせします。
+  </p>
+
+  <h2>9. お問い合わせ</h2>
+  <p>
+    本ポリシーに関するお問い合わせは、下記サポート窓口までご連絡ください。
+    アプリ内の「設定」→「ご意見・ご要望を送る」からもお送りいただけます。
+  </p>
+  <div class="contact">
+    <a href="mailto:altercore073@gmail.com">altercore073@gmail.com</a>
+  </div>
+
+  <p style="margin-top:24px;"><a href="./support.html">サポート・よくある質問</a></p>
 </main>
 </body>
 </html>

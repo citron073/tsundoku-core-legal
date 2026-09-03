@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート — TSUNDOKU CORE</title>
+<style>
+  :root {
+    --bg: #FBFAF8;
+    --card: #FFFFFF;
+    --border: #E5E1DA;
+    --text: #1F1D1A;
+    --muted: #6B6660;
+    --primary: #3A5A78;
+    --accent: #B5651D;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --card: #1E1E1E;
+      --border: #2E2E2E;
+      --text: #EDEAE4;
+      --muted: #9C968E;
+      --primary: #7BA3C4;
+      --accent: #D9884A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 16px;
+    margin-top: 36px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    color: var(--primary);
+  }
+  h3 {
+    font-size: 14px;
+    margin-top: 24px;
+    margin-bottom: 4px;
+  }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  a { color: var(--primary); }
+  .contact {
+    margin-top: 12px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--card);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>サポート</h1>
+  <p class="updated">TSUNDOKU CORE（積読コア）／ 最終更新: 2026-09-03</p>
+
+  <p>
+    紙の本の積読を把握して、読むきっかけを作るためのアプリです。
+    ご不明な点は、まず下の「よくある質問」をご覧ください。
+    解決しない場合はページ下部のお問い合わせ先までご連絡ください。
+  </p>
+
+  <h2>よくある質問</h2>
+
+  <h3>バーコードが読み取れません</h3>
+  <p>
+    読み取れるのは書籍用のバーコード（ISBN／978 または 979 で始まるもの）です。
+    本の裏表紙にある2段のバーコードのうち、上段をお試しください。
+    明るい場所で、バーコード全体が枠に入るようにすると読み取りやすくなります。
+    どうしても読めない場合は、スキャン画面から手入力で登録できます。
+  </p>
+
+  <h3>タイトルや著者が出てきません</h3>
+  <p>
+    書誌情報は openBD と Google Books から取得しています。
+    古い本・自費出版・同人誌などは、どちらにも登録がないことがあります。
+    その場合は手入力で登録できます。登録後に本の詳細画面から「書誌情報を補足する」を選ぶと、
+    不足している項目だけを埋め直すこともできます。
+  </p>
+
+  <h3>ページ数や出版社が空欄のままです</h3>
+  <p>
+    提供元にその項目が無い場合は空欄になります。推測で埋めることはしません。
+    本の詳細画面の「編集」から、ご自身で入力していただけます。
+    なお「積読の高さ」は、ページ数が分かっている積読の本だけを対象に計算しています。
+  </p>
+
+  <h3>登録した本はどこに保存されますか</h3>
+  <p>
+    ログインしたアカウントに紐づけて保存されます。
+    機種変更や再インストールのあとも、同じアカウントでログインすれば引き継がれます。
+  </p>
+
+  <h3>退会（アカウント削除）したい</h3>
+  <p>
+    アプリ内の「設定」→「アカウントを削除」から、ご自身で削除できます。
+    アカウントと、登録した本・積読の記録がすべて削除されます。この操作は取り消せません。
+  </p>
+
+  <h3>他の人に自分の本棚が見られることはありますか</h3>
+  <p>
+    ありません。ランキングや他の利用者との比較はありません。
+    「友達」機能を使う場合のみ、双方が承諾した相手とだけ実績や読了数を見せ合えます。
+    承諾しない限り、誰にも共有されません。
+  </p>
+
+  <h2>お問い合わせ</h2>
+  <p>
+    アプリ内の「設定」→「ご意見・ご要望を送る」から、そのままお送りいただけます。
+    不具合のご報告もこちらで受け付けています。
+  </p>
+  <div class="contact">
+    メールでのお問い合わせ: <a href="mailto:altercore073@gmail.com">altercore073@gmail.com</a>
+  </div>
+  <p style="margin-top:24px;">
+    個人で開発・運営しているため、お返事までにお時間をいただく場合があります。あらかじめご了承ください。
+  </p>
+
+  <h2>関連ページ</h2>
+  <ul>
+    <li><a href="./">プライバシーポリシー</a></li>
+  </ul>
+</main>
+</body>
+</html>
