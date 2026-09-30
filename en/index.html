@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TSUNDOKU CORE</title>
+<style>
+  :root {
+    --bg: #FBFAF8; --card: #FFFFFF; --border: #E5E1DA;
+    --text: #1F1D1A; --muted: #6B6660; --primary: #3A5A78; --accent: #B5651D;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212; --card: #1E1E1E; --border: #2E2E2E;
+      --text: #EDEAE4; --muted: #9C968E; --primary: #7BA3C4; --accent: #D9884A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.8;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .updated { color: var(--muted); font-size: 13px; margin-bottom: 32px; }
+  h2 {
+    font-size: 16px; margin-top: 36px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--border); color: var(--primary);
+  }
+  h3 { font-size: 14px; margin-top: 24px; margin-bottom: 4px; }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  a { color: var(--primary); }
+  .contact {
+    margin-top: 12px; padding: 16px; border: 1px solid var(--border);
+    border-radius: 12px; background: var(--card);
+  }
+  .lang { text-align: right; font-size: 13px; margin: 0 0 8px; }
+  .note {
+    margin-top: 12px; padding: 16px; border: 1px solid var(--accent);
+    border-radius: 12px; background: var(--card);
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="lang"><a href="../" hreflang="ja" lang="ja">日本語</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Effective date: September 30, 2026</p>
+
+  <p>
+    TSUNDOKU CORE ("the App") is operated by ALTER CORE ("we", "us").
+    This policy explains what personal information the App handles, why, and the choices you have.
+  </p>
+
+  <h2>1. Who we are</h2>
+  <p>
+    Operator: ALTER CORE, a sole proprietorship based in Japan<br>
+    Contact: <a href="mailto:altercore073@gmail.com">altercore073@gmail.com</a>
+  </p>
+
+  <h2>2. Information we collect</h2>
+  <p>The App stores the following information using Supabase (a database service).</p>
+
+  <h3>Account information</h3>
+  <ul>
+    <li>If you use Sign in with Apple: your name and email address. If you choose Apple's "Hide My Email", we receive only the relay address Apple creates.</li>
+    <li>If you use Google sign-in: your name, email address and profile picture.</li>
+  </ul>
+  <p>We never receive your password. Apple and Google handle sign-in and tell us only the result.</p>
+
+  <h3>Information you add</h3>
+  <ul>
+    <li>The books you add and what you enter about them (title, author, ISBN, page count, price paid, purchase date, reading status, notes, tags and location)</li>
+    <li>Photos you take of covers and spines</li>
+    <li>Reading actions, projects and authors you follow</li>
+    <li>Feedback you send us</li>
+  </ul>
+
+  <h3>Device information</h3>
+  <ul>
+    <li>A push notification token, only if you turn on notifications for possible new releases</li>
+  </ul>
+  <p>
+    We do not collect your location, contacts, whole photo library or advertising identifier (IDFA).
+    The camera is used only to scan barcodes and to photograph covers and spines.
+  </p>
+
+  <h2>3. How we use it</h2>
+  <ul>
+    <li>To create your account and let you sign in</li>
+    <li>To save and show your library</li>
+    <li>To show your unread pile, related books, what to read next and your badges</li>
+    <li>To check for and tell you about possible new releases by authors you follow</li>
+    <li>To answer your messages and to find and fix problems</li>
+  </ul>
+  <p>We do not use your data for advertising, we do not sell it, and we do not use it to train or run generative AI.</p>
+
+  <h2>4. What other users can see</h2>
+
+  <h3>Photos of covers and spines</h3>
+  <div class="note">
+    <p style="margin:0;">
+      <strong>Anyone who has the exact address (URL) of a photo you take can view it,</strong>
+      because photos are stored in a publicly readable location.
+      The addresses are made of hard-to-guess identifiers, and there is no way to browse other people's photos in the App,
+      but we cannot guarantee that only you can see them.
+      Please make sure nothing but the book (such as your surroundings or handwriting) appears in the photo.
+    </p>
+  </div>
+  <p>Only you can add or delete your photos. Deleting a book or your account also deletes its photos.</p>
+
+  <h3>Shared book details</h3>
+  <p>
+    <strong>Book details such as ISBN, title, author, publisher, page count, size (height) and list price are stored as data shared by all users.</strong>
+    If you fill in missing details in the "Book details" section of the Edit screen, other users who have the same book will see them too.
+    This avoids fetching the same book's details again and again.
+  </p>
+  <p>
+    <strong>Your price paid, purchase date, reading status, notes, tags and location belong only to you</strong> and are never shared with other users.
+  </p>
+
+  <h3>Friends</h3>
+  <p>
+    You can send a friend request by entering someone's exact email address. Badges and finished counts are shared
+    <strong>only with friends who have both accepted</strong>. Nothing is shown to anyone else or to the public, and there are no rankings.
+  </p>
+
+  <h2>5. Service providers</h2>
+  <p>We do not sell your personal information or give it to third parties without your consent. We use these service providers to run the App:</p>
+  <ul>
+    <li><a href="https://supabase.com/privacy">Supabase</a> (database, sign-in and photo storage)</li>
+    <li><a href="https://www.apple.com/legal/privacy/">Apple</a> (Sign in with Apple, delivering push notifications)</li>
+    <li><a href="https://policies.google.com/privacy">Google</a> (Google sign-in)</li>
+    <li><a href="https://expo.dev/privacy">Expo</a> (relaying push notifications)</li>
+    <li><a href="https://resend.com/legal/privacy-policy">Resend</a> (emailing us the feedback you send, with your user ID, so we can read it)</li>
+  </ul>
+  <p>
+    Book details come from <a href="https://openbd.jp/">openBD</a>, the <a href="https://ndlsearch.ndl.go.jp/en/">National Diet Library of Japan (NDL Search)</a> and <a href="https://openlibrary.org/">Open Library</a>.
+    <strong>We send them only an ISBN or an author's name, never information that identifies you.</strong>
+  </p>
+
+  <h2>6. Where your data is stored</h2>
+  <p>
+    Your data is stored on Supabase servers in <strong>Seoul, Republic of Korea</strong>.
+    Some of our service providers are based in the United States (Supabase, Apple, Google, Expo and Resend).
+    Your information may therefore be processed outside your country, where privacy laws may differ.
+  </p>
+
+  <h2>7. How we protect it</h2>
+  <ul>
+    <li>All communication is encrypted (HTTPS).</li>
+    <li>The database controls access per user, so no one can read or change another user's personal data (except the shared information described in section 4).</li>
+    <li>Administrative credentials are kept only by us and are not included in the App.</li>
+    <li>We collect only what the App's features need (section 2).</li>
+  </ul>
+
+  <h2>8. How long we keep it</h2>
+  <p>
+    We keep your information for as long as you have an account.
+    You can delete your account yourself at any time from Settings → Delete account in the App.
+    This deletes your account, your book records, the photos you took and your feedback. It cannot be undone.
+    It may take some time for the deletion to be fully reflected in our systems.
+    Emails that told us about your feedback (sent through Resend, section 5) stay in our mailbox as a record of our reply;
+    contact us (section 9) if you want those deleted too.
+  </p>
+  <p>
+    <strong>The shared book details described in section 4 (ISBN, title, author, page count and so on) are not deleted,</strong>
+    because they describe the book, not you, and other users rely on them.
+  </p>
+  <p>
+    Before deleting, you can <strong>export your books at any time</strong> from Settings → Export your library as CSV (free).
+    If we ever end the service, we will announce it in advance and give you time to export your data.
+  </p>
+
+  <h2>9. Your choices and rights</h2>
+  <p>
+    You can view, correct, export and delete your information in the App at any time.
+    You can also ask us to tell you what personal information we hold about you, to correct or delete it, or to stop using it,
+    by sending a message from Settings → Send feedback in the App (which lets us confirm it comes from your signed-in account)
+    or by emailing <a href="mailto:altercore073@gmail.com">altercore073@gmail.com</a>.
+    We will confirm it is you and respond without undue delay, free of charge.
+    You can turn off notifications at any time in the App or in your device settings.
+  </p>
+
+  <h2>10. Advertising, tracking and "Do Not Track"</h2>
+  <p>
+    The App shows no ads, and it does not track you across other apps or websites or share usage data with third parties.
+    Because we do not track you, the App does not respond differently to "Do Not Track" signals.
+  </p>
+
+  <h2>11. Children</h2>
+  <p>
+    The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13.
+    If you believe a child under 13 has given us personal information, please contact us and we will delete it.
+  </p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>
+    If we change this policy, we will update the effective date on this page.
+    We will tell you in the App about any important change.
+  </p>
+
+  <h2>13. Contact</h2>
+  <p>
+    For questions or complaints about this policy or how we handle your information, contact us below.
+    You can also send us a message from Settings → Send feedback in the App.
+  </p>
+  <div class="contact">
+    ALTER CORE<br>
+    <a href="mailto:altercore073@gmail.com">altercore073@gmail.com</a>
+  </div>
+
+  <p style="margin-top:24px;"><a href="./support.html">Support and FAQ</a></p>
+</main>
+</body>
+</html>

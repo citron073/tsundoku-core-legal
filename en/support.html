@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — TSUNDOKU CORE</title>
+<style>
+  :root {
+    --bg: #FBFAF8;
+    --card: #FFFFFF;
+    --border: #E5E1DA;
+    --text: #1F1D1A;
+    --muted: #6B6660;
+    --primary: #3A5A78;
+    --accent: #B5651D;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --card: #1E1E1E;
+      --border: #2E2E2E;
+      --text: #EDEAE4;
+      --muted: #9C968E;
+      --primary: #7BA3C4;
+      --accent: #D9884A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.8;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 16px;
+    margin-top: 36px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    color: var(--primary);
+  }
+  h3 {
+    font-size: 14px;
+    margin-top: 24px;
+    margin-bottom: 4px;
+  }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  a { color: var(--primary); }
+  .lang { text-align: right; font-size: 13px; margin: 0 0 8px; }
+  .contact {
+    margin-top: 12px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--card);
+  }
+  .note {
+    margin-top: 12px; padding: 16px; border: 1px solid var(--accent);
+    border-radius: 12px; background: var(--card);
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="lang"><a href="../support.html" hreflang="ja" lang="ja">日本語</a></p>
+  <h1>Support</h1>
+  <p class="updated">TSUNDOKU CORE / Last updated: 2026-09-30</p>
+  <p>
+    An app to see the physical books you own but haven't read yet (your tsundoku) and find a reason to read them.
+    Please check the FAQ below first. If that doesn't help, contact us at the address at the bottom of this page.
+  </p>
+
+  <h2>FAQ</h2>
+
+  <h3>The barcode won't scan</h3>
+  <p>
+    The App reads book barcodes (ISBN, starting with 978 or 979).
+    If the back cover has two rows of barcodes, try the top one.
+    It's easier in good light with the whole barcode inside the frame.
+    If it still won't scan, you can add the book by hand from the scan screen.
+  </p>
+
+  <h3>The title or author doesn't appear</h3>
+  <p>
+    Book details come from openBD, the National Diet Library of Japan (NDL Search) and Open Library.
+    Older, self-published or small-press books may not be in any of them.
+    In that case you can add the book by hand. After adding it, open Edit on the book's screen and use the "Book details" section to fill in only the missing fields.
+  </p>
+
+  <h3>The page count or publisher is blank</h3>
+  <p>
+    If the source doesn't have that field, it stays blank. We never guess.
+    You can enter it yourself from Edit on the book's screen.
+    "Tsundoku height" is calculated only from unread books whose page count is known.
+  </p>
+
+  <h3>Where are my books stored?</h3>
+  <p>
+    They are saved to the account you signed in with.
+    After changing phones or reinstalling, sign in with the same account to get them back.
+  </p>
+
+  <h3>I want to move or keep my data</h3>
+  <p>
+    From Settings → Export your library as CSV, you can export your books as a CSV file at any time.
+    Email it to yourself, save it to Files or open it in a spreadsheet: it's up to you. Exporting is free.
+  </p>
+  <div class="note">
+    <p style="margin:0;">
+      <strong>We never hold your data hostage.</strong>
+      If we ever end the service, we will announce it in the App and on this page in advance and give you time to export your data.
+      We will never shut down without notice and lose your data.
+    </p>
+  </div>
+
+  <h3>I want to delete my account</h3>
+  <p>
+    You can do it yourself from Settings → Delete account in the App.
+    Your account and all your books and records will be deleted. This cannot be undone.
+  </p>
+
+  <h3>Can other people see my bookshelf?</h3>
+  <p>
+    No. There are no rankings or comparisons with other users.
+    Only if you use Friends can you share badges and finished counts, and only with people who have both accepted.
+  </p>
+
+  <h2>Contact</h2>
+  <p>You can send us a message from Settings → Send feedback in the App. Bug reports are welcome there too.</p>
+  <div class="contact">
+    Email: <a href="mailto:altercore073@gmail.com">altercore073@gmail.com</a>
+  </div>
+  <p style="margin-top:24px;">
+    The App is built and run by one person, so replies may take a little time. Thank you for your patience.
+  </p>
+
+  <h2>Related</h2>
+  <ul>
+    <li><a href="./">Privacy Policy</a></li>
+  </ul>
+
+  <h2>Data sources</h2>
+  <p>
+    Some book details, such as a book's size (height), are adapted from the National Diet Library's bibliographic data
+    (<a href="https://ndlsearch.ndl.go.jp/en/">NDL Search</a>), licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+    Details of upcoming books include forthcoming-title data from the Japan Publishing Organization for Information Infrastructure Development (JPRO) and may differ from the published book.
+  </p>
+</main>
+</body>
+</html>
